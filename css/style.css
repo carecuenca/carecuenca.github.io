@@ -255,6 +255,8 @@ button:active{
   line-height: 1;
   cursor: pointer;
   text-align: right;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .mobile-nav-toggle i {
