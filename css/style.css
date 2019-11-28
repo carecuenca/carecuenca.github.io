@@ -588,8 +588,8 @@ button:active{
 }
 
 
-.form input,
-.form textarea {
+#contact .form input,
+#contact .form textarea {
   width: 100%;
   border-radius: 10px;
   padding: 10px 15px;
@@ -599,39 +599,39 @@ button:active{
   margin-bottom: 10px;
 }
 
-.form input::-webkit-input-placeholder,
-.form textarea::-webkit-input-placeholder {
-  color: #3AAEA9;
-}
-
-.form input::-moz-placeholder,
-.form textarea::-moz-placeholder {
-  color: #3AAEA9;
-}
-.form input:-ms-input-placeholder,
-.form textarea:-ms-input-placeholder {
-  color: #3AAEA9;
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
+#contact .form input::-webkit-input-placeholder,
+#contact .form textarea::-webkit-input-placeholder {
   color: #DEF2F1;
 }
 
-.form input[placeholder], [placeholder], *[placeholder]
-{
+#contact .form input::-moz-placeholder,
+#contact .form textarea::-moz-placeholder {
+  color: #DEF2F1;
+}
+
+#contact .form input:-ms-input-placeholder,
+#contact .form textarea:-ms-input-placeholder {
+  color: #DEF2F1;
+}
+
+#contact .form input::placeholder,
+#contact .form textarea::placeholder {
+  color: #DEF2F1;
+}
+
+#contact .form input[placeholder]{
     color:#FFF !important;
 }
 
-.form input:focus,
-.form textarea:focus {
+#contact .form input:focus,
+#contact .form textarea:focus {
   background: none;
   box-shadow: none;
   border: 2px solid #17242A;
   transition: 0.2s;
 }
 
-.form button[type="submit"]:hover {
+#contact .form button[type="submit"]:hover {
   background: #FFF;
   color: #17242A;
   cursor: pointer;
