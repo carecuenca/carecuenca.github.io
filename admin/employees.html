@@ -289,36 +289,434 @@
 
           <div class="row">
 
-            <!-- Card -->
+            <!-- Container -->
             <div class="col-md-12">
+
+              <!-- Add Employee Card -->
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
-                <div class="card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-white">Employees</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="mdi mdi-dots-vertical text-white"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+                <a href="#collapseNewEmployee" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseNewEmployee">
+                  <h6 class="m-0 font-weight-bold text-white">Create a new employee record</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseNewEmployee">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <span>First Name</span>
+                          <input type="text" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Last Name</span>
+                          <input type="text" class="form-control" placeholder="Last Name" required>
+                        </div>
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <span>Gender</span>
+                            <select class="form-control">
+                              <option selected>Male</option>
+                              <option>...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <span>Phone Number</span>
+                            <input type="text" class="form-control" placeholder="Phone Number" required>
+                          </div>
+                        </div>
+
+                      <!-- Address -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-md-6">
+                          <span>Address 1</span>
+                          <input type="text" class="form-control" placeholder="Street Address" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Address 2</span>
+                          <input type="text" class="form-control" placeholder="Street Address" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>City</span>
+                          <input type="text" class="form-control" placeholder="City" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>State</span>
+                          <input type="text" class="form-control" placeholder="State" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Zip Code</span>
+                          <input type="text" class="form-control" placeholder="Zip Code" required>
+                        </div>
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-md-6">
+                          <span>SSN</span>
+                          <input type="text" class="form-control" placeholder="Company" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Employee ID</span>
+                          <input type="text" class="form-control" placeholder="Company" required>
+                        </div>
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-sm-3">
+                          <span>Exemptions</span>
+                          <input type="number" class="form-control" placeholder="0" required>
+                        </div>
+                        <div class="form-group col-sm-3">
+                          <span>Status</span>
+                          <select class="form-control">
+                            <option selected>Active</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Ethnicity</span>
+                          <select class="form-control">
+                            <option selected>Ethnicity</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <!--  -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-md-6">
+                          <span>Date Hired</span>
+                          <input type="date" class="form-control" placeholder="Date Hired" required>  
+                        </div>   
+                        <div class="form-group col-md-6">
+                          <span>Date Fingerprinted</span>
+                          <input type="date" class="form-control" placeholder="Date Fingerprinted" required>
+                        </div>   
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-md-6">
+                          <span>Driver's License State</span>
+                          <select class="form-control">
+                            <option selected>State</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Driver's License</span>
+                          <input type="text" class="form-control" placeholder="0" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Worker's Comp Code</span>
+                          <input type="text" class="form-control" placeholder="0" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Electrician License</span>
+                          <input type="text" class="form-control" placeholder="0" required>
+                        </div>
+                      </div>
+
+                      <!--  -->
+                      <div class="form-row mt-3">
+                        <div class="form-group col-md-6">
+                          <span>Hiring Source</span>
+                          <select class="form-control">
+                            <option selected>Hiring Source</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div> 
+                        <div class="form-group col-md-12">
+                          <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="Disadvantaged">
+                            <label class="custom-control-label" for="Disadvantaged">Disadvantaged</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="Owner">
+                            <label class="custom-control-label" for="Owner">Owner/Operator</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="isI9Verified">
+                            <label class="custom-control-label" for="isI9Verified">I Certify that this employee is I9 verified.</label>
+                          </div>
+                          <div class="custom-control custom-checkbox mb-1">
+                            <input type="checkbox" class="custom-control-input" id="BusinessOwner">
+                            <label class="custom-control-label" for="BusinessOwner">Business Owner</label>
+                          </div>
+                        </div> 
+                      </div>
+                      
+                    </form>
+                    <!-- End form -->
+
                   </div>
                 </div>
-                <!-- Card Body -->
-                <div class="card-body" style="height: 500px;">
+              </div>
+              <!-- End Add Employee card -->
 
-                  <!-- Content here -->
-                    
-                  </form>
-                  <!-- End form -->
-
+              <!-- Demographic Classification Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseDemographicClassification" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseDemographicClassification">
+                  <h6 class="m-0 font-weight-bold text-white">Demographic Classification</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseDemographicClassification">
+                  <div class="card-body">
+                      <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-main shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Add Classification</a>
+                  </div>
                 </div>
               </div>
+              <!-- End Demographic Classification Card card -->
+
+              <!-- HUD Section 3 Information Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseHUD" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseHUD">
+                  <h6 class="m-0 font-weight-bold text-white">HUD Section 3 Information</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseHUD">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <span>Section 3</span>
+                          <select class="form-control">
+                            <option selected>Section</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div> 
+                        <div class="form-group col-md-4">
+                          <span>Last day at Section 3</span>
+                          <input type="date" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                          <span>Residency Status</span>
+                          <select class="form-control">
+                            <option selected>Status</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div> 
+                      </div>
+                    </form>
+                      
+
+                  </div>
+                </div>
+              </div>
+              <!-- End HUD Section 3 Information card -->
+
+              <!-- Apprentice Information Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseApprentice" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseApprentice">
+                  <h6 class="m-0 font-weight-bold text-white">Apprentice Information</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseApprentice">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <span>Apprentice ID</span>
+                          <input type="text" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Rate Percentage</span>
+                          <input type="text" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Period/Level</span>
+                          <input type="text" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Apprentice/Training Program</span>
+                          <select class="form-control">
+                            <option selected>Apprentice/Training Program</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div> 
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row">  
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Approval</span>
+                          <select class="form-control">
+                            <option selected>Apprentice Approval</option>
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div> 
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Approval Date</span>
+                          <input type="date" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Expiry Date</span>
+                          <input type="date" class="form-control" placeholder="Date" required>
+                        </div>
+                      </div>
+
+                      <!-- -->
+                      <div class="form-row">  
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Registration Date</span>
+                          <input type="date" class="form-control" placeholder="Date" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Apprentice Approved By</span>
+                          <input type="text" class="form-control" placeholder="Approved By" required>
+                        </div>
+                      </div>
+
+
+                    </form>
+                    <!-- End form  -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Apprentice Information card -->
+
+              <!-- Default Hourly Paid Fringes Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseFringes" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFringes">
+                  <h6 class="m-0 font-weight-bold text-white">Default Hourly Paid Fringes</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseFringes">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <span>Vac/Hold/Dues</span>
+                          <input type="text" class="form-control" placeholder="Vac/Hold/Dues" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Health and Welfare</span>
+                          <input type="text" class="form-control" placeholder="Health and Welfare" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Pension</span>
+                          <input type="text" class="form-control" placeholder="Pension" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>All Other</span>
+                          <input type="text" class="form-control" placeholder="All Other" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Training</span>
+                          <input type="text" class="form-control" placeholder="Training" required>
+                        </div>
+                      </div>
+
+                    </form>
+                    <!-- End form  -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Default Hourly Paid Fringes card -->
+
+              <!-- Pre-Tax Voluntary Employee Contributions and Others Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseContributions" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseContributions">
+                  <h6 class="m-0 font-weight-bold text-white">Pre-Tax Voluntary Employee Contributions and Others</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseContributions">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <span>Pension</span>
+                          <input type="text" class="form-control" placeholder="Pension" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <span>Medical</span>
+                          <input type="text" class="form-control" placeholder="All Other" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                        <div class="custom-control custom-checkbox mb-1">
+                          <input type="checkbox" class="custom-control-input" id="HasContributions">
+                          <label class="custom-control-label" for="HasContributions">Voluntary Contributions Included in Gross Pay</label>
+                        </div>
+                     </div>
+
+                    </form>
+                    <!-- End form  -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Default Hourly Paid Fringes card -->
+
+              <!--  Default Other Deduction Notes Card -->
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseNotes" class="d-block card-header bg-primary py-3 d-flex flex-row align-items-center justify-content-between" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseNotes">
+                  <h6 class="m-0 font-weight-bold text-white">Default Other Deduction Notes</h6>
+                </a>
+                <!-- Card Body Collapse -->
+                <div class="collapse show" id="collapseNotes">
+                  <div class="card-body">
+
+                    <!-- Form Sample -->
+                    <form>
+                        
+                      <!-- -->
+                      <div class="form-row">
+                        <div class="form-group col-md-12">
+                          <span>Default notes will be inserted in each employee payroll record</span>
+                          <textarea type="text" class="form-control" placeholder="Notes" required></textarea>
+                        </div>
+                     </div>
+
+                    </form>
+                    <!-- End form  -->
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Default Hourly Paid Fringes card -->
+
             </div>
+            <!-- End container -->
 
           </div>
           <!-- end row -->
@@ -362,9 +760,10 @@
   <!-- Bootstrap JavaScript-->
   <script src="../lib/jquery/jquery.min.js"></script>
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Core plugin JavaScript-->
-  <script src="../lib/jquery-easing/jquery.easing.min.js"></script>
+  <script src="../lib/jquery/jquery.easing.min.js"></script>
 
   <!-- Main JS for this dashboard-->
   <script src="js/main.js"></script>
