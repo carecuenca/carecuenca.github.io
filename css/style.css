@@ -208,6 +208,29 @@ button:active{
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
+.tab-content{
+  padding: 0 !important;
+}
+.nav-tabs .nav-link {
+  font-size: 14px;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #FFFFFF !important;
+  background-color: #2B7A77 !important;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.navbar-nav .nav-link, .navbar-nav .nav-link.active{
+  border: 0 !important;
+  border-color: none !important;
+  border-radius: none !important;
+}
+.navbar-nav .nav-tabs .nav-link.active,
+.navbar-nav .nav-tabs .nav-item.show .nav-link {
+  color: #FFFFFF !important;
+  background-color: #17242A !important;
+}
 
 .main-nav,
 .main-nav * {
