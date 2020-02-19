@@ -32,6 +32,10 @@
   font-style: normal;
 }
 
+.bebas{
+  font-family: 'Bebas Neue', Arial, sans-serif;
+}
+
 body {
   background: #fff;
   color: #17242A;
@@ -214,11 +218,27 @@ button:active{
 .nav-tabs .nav-link {
   font-size: 14px;
 }
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
+.tabs .nav-tabs .nav-link.active,
+.tabs .nav-tabs .nav-item.show .nav-link {
   color: #FFFFFF !important;
   background-color: #2B7A77 !important;
   border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.mobile-tabs .nav-tabs{
+  border-bottom: 0 !important;
+}
+.mobile-tabs .nav-tabs .nav-link{
+  border: 0 !important;
+  border-color: none !important;
+  border-radius: 0 !important;
+  background-color: none !important;
+  color: #464646;
+}
+.mobile-tabs .nav-tabs .nav-link.active,
+.mobile-tabs .nav-tabs .nav-item.show .nav-link{
+  background-color: #2B7A77 !important;
+  color: #FFFFFF;
 }
 
 .navbar-nav .nav-link, .navbar-nav .nav-link.active{
@@ -230,6 +250,21 @@ button:active{
 .navbar-nav .nav-tabs .nav-item.show .nav-link {
   color: #FFFFFF !important;
   background-color: #17242A !important;
+}
+
+/* For breadcrumbs nav */
+.bc-icons .breadcrumb{
+  padding: 0.75rem 0;
+  background: none !important;
+}
+.bc-icons .breadcrumb-item + .breadcrumb-item::before {
+  content: none; 
+}
+.bc-icons .breadcrumb-item.active {
+  color: #2B7A77; 
+}
+.breadcrumb .breadcrumb-item h3{
+  margin: 0 !important;
 }
 
 .main-nav,
