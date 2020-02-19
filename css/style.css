@@ -225,6 +225,7 @@ button:active{
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
+/* Mobile version tab control */
 .mobile-tabs .nav-tabs{
   border-bottom: 0 !important;
 }
@@ -239,6 +240,9 @@ button:active{
 .mobile-tabs .nav-tabs .nav-item.show .nav-link{
   background-color: #2B7A77 !important;
   color: #FFFFFF;
+}
+.dropdown-title{
+  color: #17242A;
 }
 
 .navbar-nav .nav-link, .navbar-nav .nav-link.active{
